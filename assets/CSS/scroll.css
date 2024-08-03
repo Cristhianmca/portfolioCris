@@ -1,0 +1,62 @@
+:root{
+    --color-scrollbar: #D3D3D4;
+    --color-background-scrollbar: #eee;
+}
+.content_page::-webkit-scrollbar {
+    width: 25px;
+    background-color: transparent;
+}
+
+.content_page::-webkit-scrollbar-thumb {
+    border:10px solid transparent;
+    border-radius: 40px;
+    box-shadow: none;
+
+}
+
+.content_page:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar); /*esto es para que se vea el efecto de sombra en el scroll */
+
+}
+
+.content_page:hover::-webkit-scrollbar-thumb:hover{
+    box-shadow: inset 0 0 0 10px var(--color-secondary); /*esto es para que se vea el efecto de sombra en el scroll */
+    border: 8px solid transparent;
+
+}
+
+.content_page::-webkit-scrollbar-track{
+    margin: 40px 0;
+
+}
+
+
+
+.layout__aside::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--color-secondary);
+}
+.layout__aside::-webkit-scrollbar-thumb {
+    border:10px solid transparent;
+    border-radius: 40px;
+    box-shadow: none;
+
+}
+.layout__aside:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-principal); /*esto es para que se vea el efecto de sombra en el scroll */
+}
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{
+    
+    border: 8px solid transparent;
+
+}
+.layout__aside::-webkit-scrollbar-track{
+    margin: 10px 0;
+
+}
+
+/*SCROLL MOZILLA*/
+/* .content_page{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}  */
